@@ -1,144 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nio Sports Refund Policy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nio Sports — Refund Policy (Dark)</title>
   <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
-      padding: 20px;
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1720;
+      --muted:#9aa4b2;
+      --accent:#60a5fa;
+      --accent-2:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --success:#22c55e;
+      --danger:#ef4444;
+      --radius:14px;
+      --max-width:900px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #1e1e1e;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    html,body{
+      height:100%;
+      margin:0;
+      background: linear-gradient(180deg,var(--bg) 0%, #071019 100%);
+      color: #e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
     }
 
-    h1, h2, h3 {
-      color: #ffffff;
+    .wrap{
+      max-width:var(--max-width);
+      margin:40px auto;
+      padding:28px;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 28px;
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius:var(--radius);
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+      padding:28px;
     }
 
-    h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:18px;
     }
 
-    h3 {
-      margin-top: 20px;
-      font-size: 18px;
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#031225;font-size:20px;box-shadow:0 6px 18px rgba(124,58,237,0.12);
     }
 
-    p {
-      margin: 10px 0;
-      color: #cccccc;
-    }
+    h1{font-size:20px;margin:0 0 4px 0}
+    p.lead{margin:0;color:var(--muted);font-size:13px}
 
-    ul {
-      margin: 10px 0 10px 20px;
-    }
+    .section{margin-top:20px;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.03)}
+    .section h2{font-size:15px;margin:0 0 10px 0}
+    .section p{color:var(--muted);margin:0 0 12px 0;font-size:13px}
 
-    ul li {
-      margin: 8px 0;
-    }
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:700px){.grid{grid-template-columns:1fr}}
 
-    .note {
-      background: #2e2e2e;
-      padding: 15px;
-      border-radius: 5px;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #bbbbbb;
-    }
+    .note{background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);color:var(--muted);font-size:13px}
 
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 13px;
-      color: #777777;
-    }
+    .list{margin:8px 0 0 0;padding:0;list-style:none}
+    .list li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02);display:flex;gap:10px;align-items:flex-start}
+    .badge{min-width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.02);display:inline-grid;place-items:center;color:var(--accent);font-weight:700}
+    .muted{color:var(--muted);font-size:13px}
+
+    .k{color:var(--accent);font-weight:600}
+    .danger{color:var(--danger);font-weight:600}
+    .success{color:var(--success);font-weight:600}
+
+    footer{margin-top:20px;border-top:1px dashed rgba(255,255,255,0.03);padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .meta{color:var(--muted);font-size:13px}
+
+    /* accessible focus states */
+    a.button{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#031225;text-decoration:none;font-weight:600}
+    a.button:focus{outline:3px solid rgba(96,165,250,0.14)}
+
+    /* small helpers */
+    code{background:rgba(255,255,255,0.02);padding:4px 6px;border-radius:6px;font-size:12px;color:var(--accent)}
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Nio Sports Refund Policy</h1>
-    <p>At <strong>Nio Sports</strong>, we value our users and aim to provide a transparent and fair refund process for turf and ground bookings as well as bidding activities. Please read the policy carefully before making any bookings or bids.</p>
+  <div class="wrap">
+    <div class="card" role="article" aria-label="Nio Sports Refund Policy">
+      <header>
+        <div class="logo">NS</div>
+        <div>
+          <h1>🌙 Nio Sports — Refund Policy</h1>
+          <p class="lead">Transparent, fair and clearly defined refund rules for bookings and bidding activities. (All refunds go to Nio Money — the in-app wallet.)</p>
+        </div>
+      </header>
 
-    <h2>1. Refund Scenarios</h2>
-    
-    <h3>A. Booking canceled by the venue owner</h3>
-    <ul>
-      <li>If the booking is canceled by the venue owner, the user will receive a <strong>100% refund including service fees</strong>.</li>
-      <li>The refund amount will be credited <strong>only to the user’s Nio Sports wallet</strong> within <strong>48 hours</strong>.</li>
-    </ul>
+      <div class="section" id="scenarios">
+        <h2>🔹 1. Refund Scenarios</h2>
+        <p class="muted">Overview of how refunds are handled for venue cancellations, user cancellations and bidding-related events.</p>
 
-    <h3>B. User cancels the booking</h3>
-    <ul>
-      <li><strong>Before 24 hours</strong> of the booking time:
-        <ul>
-          <li>Refund will be processed for the booking amount.</li>
-          <li><strong>Service fees are non-refundable</strong> in this case.</li>
-          <li>Refund will be credited to the <strong>user’s wallet</strong> within <strong>48 hours</strong>.</li>
+        <div class="grid">
+          <div>
+            <h3 style="margin:12px 0 6px 0">🏟️ Venue Owner Cancels</h3>
+            <div class="note">
+              <strong class="success">100% refund</strong> including service fees — credited to <strong>Nio Money</strong> within <strong>48 hours</strong>.
+            </div>
+
+            <h3 style="margin:14px 0 6px 0">👤 User Cancels (No Bidding)</h3>
+            <ul class="list">
+              <li><div class="badge">3h</div><div><strong>Before 3 hours:</strong> Only the <span class="k">advance amount</span> is refunded. Service fees are non-refundable.</div></li>
+              <li><div class="badge">1h</div><div><strong>Before 1 hour:</strong> 50% of the <span class="k">advance amount</span> is refunded. Service fees are non-refundable.</div></li>
+              <li><div class="badge">0–1h</div><div class="danger"><strong>Within 1 hour:</strong> No refund.</div></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="margin:12px 0 6px 0">⚡ Bidding-Related Refunds</h3>
+            <ul class="list">
+              <li><div class="badge">Top</div><div><strong>Top bidder cancels before 3 hours:</strong> Only the advance amount refunded. Service fees & bidding amount non-refundable.</div></li>
+              <li><div class="badge">Top</div><div><strong>Top bidder cancels before 1 hour:</strong> 50% of advance refunded. Service fees & bidding amount non-refundable.</div></li>
+              <li><div class="badge">Top</div><div class="danger"><strong>Top bidder cancels within 1 hour:</strong> No refund.</div></li>
+              <li><div class="badge">Out</div><div><strong>Out-bidder cancels (anytime before booking):</strong> Full refund (advance + service fees + bidding amount).</div></li>
+              <li><div class="badge">First</div><div><strong>First user cancels after being out-bid (before 3 hours):</strong> Full refund (advance + service fees + bidding amount, if applicable).</div></li>
+            </ul>
+
+            <h3 style="margin:12px 0 6px 0">⏰ Automatic Cancellation at Bidding Closure</h3>
+            <div class="note">At bidding closure (3 hours before booking time — e.g., booking at 6:00 PM → bidding closes at 3:00 PM): all <strong>out-bidder bookings are automatically canceled</strong> and receive a <strong>full refund</strong> (advance + service fees + bidding amount). The top bidder remains confirmed and regular cancellation rules apply to them.</div>
+          </div>
+        </div>
+
+        <h3 style="margin:16px 0 6px 0">🚫 Non-Refundable Scenarios</h3>
+        <ul class="list">
+          <li><div class="badge">✖</div><div>Wrong booking details entered by the user — refund only if canceled before 24 hours; otherwise no refund.</div></li>
+          <li><div class="badge">✖</div><div>No-show at the venue — no refunds.</div></li>
         </ul>
-      </li>
-      <li><strong>Within 24 hours</strong> of the booking time:
-        <ul>
-          <li><strong>No cancellation or refund</strong> will be allowed.</li>
+      </div>
+
+      <div class="section" id="timeline">
+        <h2>🔹 2. Refund Timeline</h2>
+        <p class="muted">All approved refunds are credited to <strong>Nio Money (wallet)</strong> within <strong>48 hours</strong>. Refunds are not returned to external payment methods (bank/UPI/cards).</p>
+      </div>
+
+      <div class="section" id="venue-weather">
+        <h2>🔹 3. Venue / Weather Issues</h2>
+        <p class="muted">For bad weather, technical issues, or venue unavailability, users should <strong>contact the venue owner directly</strong> to resolve refund claims. Nio Sports will not process these refunds.</p>
+      </div>
+
+      <div class="section" id="notes">
+        <h2>🔹 4. Important Notes</h2>
+        <ul class="list">
+          <li><div class="badge">1</div><div>Refunds are credited only to <strong>Nio Money</strong> (in-app wallet). Refunds are <strong>non-expiring</strong>.</div></li>
+          <li><div class="badge">2</div><div>Service fees are non-refundable except where explicitly stated (e.g., venue owner cancellation, certain bidding outcomes).</div></li>
+          <li><div class="badge">3</div><div>Policy updates will be communicated via <strong>app notifications</strong> and <strong>email</strong> to all affected users.</div></li>
+          <li><div class="badge">4</div><div>© 2025 Nio Sports. All Rights Reserved.</div></li>
         </ul>
-      </li>
-    </ul>
+      </div>
 
-    <h3>C. Bidding-related refunds</h3>
-    <ul>
-      <li>If the first user books a slot and a second user places a bid:
-        <ul>
-          <li>Once the second user successfully wins the bid, the first user will get a <strong>100% refund including service fees</strong>.</li>
-          <li>Refund will be credited to the <strong>first user’s wallet</strong> within <strong>48 hours</strong>.</li>
-        </ul>
-      </li>
-      <li>If the user wins a bid but later cancels:
-        <ul>
-          <li>Users can only win a bid within <strong>3 hours of the booking time</strong>, so cancellations after winning are <strong>not allowed</strong>.</li>
-          <li>If cancellation happens <strong>before 24 hours</strong> (if applicable), the refund will be processed <strong>excluding service fees</strong>.</li>
-        </ul>
-      </li>
-    </ul>
+      <footer>
+        <div class="meta">Last updated: <strong>September 17, 2025</strong></div>
+        <div>
+          <a class="button" href="#">Contact Support</a>
+        </div>
+      </footer>
 
-    <h3>D. Non-refundable scenarios</h3>
-    <ul>
-      <li><strong>Wrong booking details entered by the user:</strong> Refund allowed only if canceled before 24 hours (service fees non-refundable). No refund if canceled within 24 hours.</li>
-      <li><strong>No-show at the venue:</strong> No refunds will be provided if the user fails to attend the booked slot.</li>
-    </ul>
-
-    <h2>2. Refund Timeline</h2>
-    <p>All approved refunds will be processed within <strong>48 hours</strong> and credited <strong>only to the user’s Nio Sports wallet</strong>.</p>
-
-    <h2>3. Important Notes</h2>
-    <div class="note">
-      <ul>
-        <li>Refunds will <strong>not</strong> be credited back to original payment methods such as bank accounts or UPI.</li>
-        <li><strong>Service fees are refundable only if the booking is canceled by the venue owner.</strong></li>
-        <li>Nio Sports reserves the right to amend or update this policy without prior notice.</li>
-      </ul>
     </div>
-
-    <div class="footer">© 2025 Nio Sports. All Rights Reserved.</div>
   </div>
 </body>
 </html>
